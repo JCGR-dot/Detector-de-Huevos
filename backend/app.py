@@ -23,7 +23,7 @@ from flask_cors import CORS
 from PIL import Image
 import tensorflow as tf
 
-from gradcam_utils import generar_gradcam, decidir_ruta, heatmap_a_base64_overlay
+from backend.gradcam_utils import generar_gradcam, decidir_ruta, heatmap_a_base64_overlay
 
 app = Flask(__name__)
 CORS(app)  # necesario para que la app de Expo Go (otro origen) pueda llamar a la API
